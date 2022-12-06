@@ -1,6 +1,6 @@
 DML:数据库操作语言:
     插入数据：
-        update into xxx (ziduan,ziduan,ziduan) values (1,1,1),values(2,2,2);
+        insert into xxx (ziduan,ziduan,ziduan) values (1,1,1),values(2,2,2);
     更新数据
         update xxx set ziduan = 'xxx' where ziduan = 'xxx';
     删除数据
