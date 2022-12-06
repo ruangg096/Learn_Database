@@ -1,0 +1,49 @@
+SQL
+
+    DDL:
+        SHOW DATEBASES展示所有数据库
+        use DATEBASES;进入数据库
+        SHOW TABLE;查看所有表
+        create table name(
+            id int comment 'xxxx',
+            gender varchar(20) comment 'xxxx'
+        ) comment 'xxxx';简历表
+        desc table ;显示信息
+        show create table xxxxx;(显示详细信息)
+
+
+        DDL 数据类型 ：三类
+            数值类型：  thinint (unsigned)
+                        smallint 
+                        mediumint
+                        int
+                        bigint
+                        float
+                        double(100,0)小数使用
+            字符串类型：char()定长 
+                       varchar()变长
+            日期类型： DATA 日期值 
+                      TIME 时间值 
+                      YEAR 年份值
+                      DATETIME 混合日期
+                      TIMESTAMP  时间戳
+
+        表修改操作： 
+            添加字段
+                alter table xxx add xxx type comment '';
+            修改字段
+                alter table xxx modify xxx type comment '';
+            改变字段
+                alter table xxx change xxx xxx type comment  ;
+            修改表名：
+                alter table xxx rename to xxx;
+            删除表项目：
+                alter table xxx drop xxx ;
+
+        删除表：
+            drop table （if exists）xxx
+
+        c置空表：
+            truncate table xxx;
+        查看当前数据库:
+            select DATEBASE();
